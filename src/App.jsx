@@ -17,13 +17,15 @@ function App() {
     <div className='mainCounter'>
       <div className='counterContainer'>
         <h1>Me Aur Code</h1>
-        <p>{counter}</p>
-        <button onClick={increment}>Increment</button>
+        <p>{counter}</p>{
+          counter >= 20 ? "" : <button onClick={increment}>Increment</button>}
         <br />
         <br />
-        <button onClick={decrement}>Decrement</button>
+        {
+          counter <= 0 ? "" : <button onClick={decrement}>Decrement</button>
+        }
       </div>
-    </div>
+    </div >
   )
 }
 
