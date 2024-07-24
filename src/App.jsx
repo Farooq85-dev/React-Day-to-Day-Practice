@@ -1,32 +1,13 @@
-import { useState } from 'react';
-import './App.scss'
+import React from "react";
+import UseContextComp from "./UseContext";
+import { UserContextProvider } from "./Context/UserContext";
 
 function App() {
-  let [counter, setCounter] = useState(0)
-
-  const increment = () => {
-    counter++;
-    setCounter(counter);
-  }
-  const decrement = () => {
-    counter--;
-    setCounter(counter);
-  }
-
   return (
-    <div className='mainCounter'>
-      <div className='counterContainer'>
-        <h1>Me Aur Code</h1>
-        <p>{counter}</p>{
-          counter >= 20 ? "" : <button onClick={increment}>Increment</button>}
-        <br />
-        <br />
-        {
-          counter <= 0 ? "" : <button onClick={decrement}>Decrement</button>
-        }
-      </div>
-    </div >
-  )
+    <UserContextProvider>
+      <UseContextComp />
+    </UserContextProvider>
+  );
 }
 
-export default App
+export default App;
