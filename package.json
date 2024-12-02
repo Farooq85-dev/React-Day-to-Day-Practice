@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "formik": "^2.4.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -22,9 +24,9 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.40",
     "sass": "^1.77.4",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^3.4.7",
     "vite": "^5.2.12"
   }
 }
